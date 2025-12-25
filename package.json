@@ -1,0 +1,20 @@
+{
+    "type": "module",
+    "scripts": {
+        "build": "tsc",
+        "start": "node dist/index.js",
+        "check": "tsc --noEmit",
+        "fmt": "prettier --write ./src",
+        "lint": "eslint ./src --ext .ts"
+    },
+    "dependencies": {
+    },
+    "devDependencies": {
+        "@types/node": "^22.15.29",
+        "@typescript-eslint/eslint-plugin": "^8.50.0",
+        "@typescript-eslint/parser": "^8.50.0",
+        "eslint": "^9.39.2",
+        "prettier": "^3.6.2",
+        "typescript": "^5.8.3"
+    }
+}
