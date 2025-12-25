@@ -198,7 +198,8 @@ export const diffToDiscordMessage = (diff: DiffJson): DiscordWebhookMessage => {
     const embeds = Object.values(diff).map((entry) => diffEntryToEmbed(entry));
 
     if (embeds.length === 0) {
-        return { content: "差分はありませんでした。" };
+        return {
+            content: "差分はありませんでしたなのです！" };
     }
 
     return { embeds };
