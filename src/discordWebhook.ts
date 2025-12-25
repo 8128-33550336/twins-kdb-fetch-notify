@@ -70,7 +70,7 @@ const moduleLabels: Record<Module, string> = {
 
 const formatTimeTableSlot = (slot: TimeTable): string => {
     if (slot.period === null) {
-        return `${slot.day} その他`;
+        return `${slot.day}`;
     }
 
     return `${slot.day}${slot.period}`;
@@ -84,11 +84,11 @@ const formatModuleTimeTable = (moduleTimeTable: ModuleTimeTable | null): string 
     const lines = Object.entries(moduleTimeTable).map(([moduleKey, slots]) => {
         const label = moduleLabels[moduleKey as Module];
         if (slots.length === 0) {
-            return `${label}: なし`;
+            return null;
         }
 
         return `${label}: ${slots.map(formatTimeTableSlot).join(", ")}`;
-    });
+    }).filter((line): line is string => line !== null);
 
     return lines.join("\n");
 };
