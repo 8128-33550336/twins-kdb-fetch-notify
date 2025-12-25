@@ -1,105 +1,152 @@
 {
     "1101102": {
-        "code": "1101102",
-        "name": "ファーストイヤーセミナー",
-        "syllabusLatestLink": null,
-        "instructionalType": {
-            "value": {
-                "code": "2",
-                "text": "演習",
-                "flags": {
-                    "講義": false,
-                    "演習": true,
-                    "実習･実験･実技": false,
-                    "卒業論文･卒業研究等": false,
-                    "その他": false
+        "type": "modified",
+        "value": {
+            "code": "1101102",
+            "name": "ファーストイヤーセミナー",
+            "syllabusLatestLink": null,
+            "instructionalType": {
+                "value": {
+                    "code": "2",
+                    "text": "演習",
+                    "flags": {
+                        "講義": false,
+                        "演習": true,
+                        "実習･実験･実技": false,
+                        "卒業論文･卒業研究等": false,
+                        "その他": false
+                    }
+                },
+                "kdbRaw": "2"
+            },
+            "credits": {
+                "value": {
+                    "type": "normal",
+                    "value": 1
+                },
+                "kdbRaw": "1.0"
+            },
+            "year": {
+                "value": {
+                    "type": "normal",
+                    "value": [
+                        1
+                    ]
+                },
+                "kdbRaw": "1",
+                "twinsRaw": "1年"
+            },
+            "terms": {
+                "term": {
+                    "text": "春学期",
+                    "code": "A"
+                },
+                "module": "春AB",
+                "weekdayAndPeriod": "金2",
+                "moduleTimeTable": {
+                    "springA": [
+                        {
+                            "day": "金",
+                            "period": 2
+                        }
+                    ],
+                    "springB": [
+                        {
+                            "day": "金",
+                            "period": 2
+                        }
+                    ],
+                    "springC": [],
+                    "summerVacation": [],
+                    "fallA": [],
+                    "fallB": [],
+                    "fallC": [],
+                    "springVacation": []
+                },
+                "twinsRaw": {
+                    "term": "春学期",
+                    "termCode": "return DataSet('2025','A','21','1101102','ファーストイヤーセミナー')",
+                    "module": "春A・春B(金2)"
                 }
             },
-            "kdbRaw": "2"
-        },
-        "credits": {
-            "value": {
-                "type": "normal",
-                "value": 1
-            },
-            "kdbRaw": "1.0"
-        },
-        "year": {
-            "value": {
-                "type": "normal",
+            "classroom": null,
+            "instructor": {
                 "value": [
-                    1
-                ]
-            },
-            "kdbRaw": "1",
-            "twinsRaw": "1年"
-        },
-        "terms": {
-            "term": {
-                "text": "春学期",
-                "code": "A"
-            },
-            "module": "春AB",
-            "weekdayAndPeriod": "金2",
-            "moduleTimeTable": {
-                "springA": [
-                    {
-                        "day": "金",
-                        "period": 2
-                    }
+                    "常 瀟琳"
                 ],
-                "springB": [
-                    {
-                        "day": "金",
-                        "period": 2
-                    }
-                ],
-                "springC": [],
-                "summerVacation": [],
-                "fallA": [],
-                "fallB": [],
-                "fallC": [],
-                "springVacation": []
+                "kdbRaw": "常 瀟琳",
+                "twinsRaw": "常 瀟琳"
             },
-            "twinsRaw": {
-                "term": "春学期",
-                "termCode": "return DataSet('2025','A','21','1101102','ファーストイヤーセミナー')",
-                "module": "春A・春B(金2)"
-            }
-        },
-        "classroom": null,
-        "instructor": {
-            "value": [
-                "常 瀟琳"
-            ],
-            "kdbRaw": "常 瀟琳",
-            "twinsRaw": "常 瀟琳"
-        },
-        "overview": "大学生活について知識と理解を深め、学問研究への動機づけを高める。とくに人文学類における各主専攻分野の学習と研究について理解を促すとともに、大学におけるコミュニケーションの方法等について基本的な指導を行う。",
-        "remarks": "人文1クラス対象\n対面",
-        "auditor": "×",
-        "conditionsForAuditors": "科目の性質及び目的上。",
-        "exchangeStudent": "×",
-        "conditionsForExchangeStudents": "",
-        "JaEnCourseName": "First Year Seminar",
-        "parentNumber": "1101102",
-        "parentCourseName": "フレッシュマン・セミナー",
-        "affiliation": {
-            "name": "人文・文化学群",
-            "code": "21",
-            "twinsRaw": {
+            "overview": "大学生活について知識と理解を深め、学問研究への動機づけを高める。とくに人文学類における各主専攻分野の学習と研究について理解を促すとともに、大学におけるコミュニケーションの方法等について基本的な指導を行う。",
+            "remarks": "人文1クラス対象\n対面",
+            "auditor": "×",
+            "conditionsForAuditors": "科目の性質及び目的上。",
+            "exchangeStudent": "×",
+            "conditionsForExchangeStudents": "",
+            "JaEnCourseName": "First Year Seminar",
+            "parentNumber": "1101102",
+            "parentCourseName": "フレッシュマン・セミナー",
+            "affiliation": {
                 "name": "人文・文化学群",
-                "code": "return DataSet('2025','A','21','1101102','ファーストイヤーセミナー')"
-            }
+                "code": "21",
+                "twinsRaw": {
+                    "name": "人文・文化学群",
+                    "code": "return DataSet('2025','A','21','1101102','ファーストイヤーセミナー')"
+                }
+            },
+            "kdbDataUpdateDate": "2025-12-17 12:23:28",
+            "requisite": [
+                {
+                    "name": "ファーストイヤーセミナー",
+                    "id": "10178",
+                    "hasLower": false
+                }
+            ]
         },
-        "kdbDataUpdateDate": "2025-12-17 12:23:28",
-        "requisite": [
-            {
-                "name": "ファーストイヤーセミナー",
-                "id": "10178",
-                "hasLower": false
+        "diff": {
+            "credits": {
+                "from": {
+                    "value": {
+                        "type": "none"
+                    },
+                    "kdbRaw": "1.0"
+                },
+                "to": {
+                    "value": {
+                        "type": "normal",
+                        "value": 1
+                    },
+                    "kdbRaw": "1.0"
+                }
+            },
+            "year": {
+                "from": {
+                    "value": [
+                        1
+                    ],
+                    "kdbRaw": "1",
+                    "twinsRaw": "1年"
+                },
+                "to": {
+                    "value": {
+                        "type": "normal",
+                        "value": [
+                            1
+                        ]
+                    },
+                    "kdbRaw": "1",
+                    "twinsRaw": "1年"
+                }
+            },
+            "remarks": {
+                "from": "人文1クラス対象",
+                "to": "人文1クラス対象\n対面"
+            },
+            "kdbDataUpdateDate": {
+                "from": "2024-12-06 13:38:42",
+                "to": "2025-12-17 12:23:28"
             }
-        ]
+        }
     },
     "EZA1020": {
         "type": "added",
