@@ -81,14 +81,16 @@ const formatModuleTimeTable = (moduleTimeTable: ModuleTimeTable | null): string 
         return "なし";
     }
 
-    const lines = Object.entries(moduleTimeTable).map(([moduleKey, slots]) => {
-        const label = moduleLabels[moduleKey as Module];
-        if (slots.length === 0) {
-            return null;
-        }
+    const lines = Object.entries(moduleTimeTable)
+        .map(([moduleKey, slots]) => {
+            const label = moduleLabels[moduleKey as Module];
+            if (slots.length === 0) {
+                return null;
+            }
 
-        return `${label}: ${slots.map(formatTimeTableSlot).join(", ")}`;
-    }).filter((line): line is string => line !== null);
+            return `${label}: ${slots.map(formatTimeTableSlot).join(", ")}`;
+        })
+        .filter((line): line is string => line !== null);
 
     return lines.join("\n");
 };
