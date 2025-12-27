@@ -203,7 +203,7 @@ export const diffToDiscordMessage = (diff: DiffJson): DiscordWebhookMessage => {
 
     if (embeds.length > 10) {
         return {
-            content: `差分件数が${embeds.length}件です。続きは${diffJsonUrl}をご覧ください。`,
+            content: `差分件数が${embeds.length}件です。続きは ${diffJsonUrl} をご覧ください。`,
             embeds: embeds.slice(0, 10),
         };
     }
