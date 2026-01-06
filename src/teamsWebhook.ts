@@ -43,7 +43,7 @@ export const diffToTeamsMessage = (diff: DiffJson): string => {
     }
 
     const displayEntries = entries.slice(0, 10);
-    const notice = entries.length > 10 ? `差分件数が${entries.length}件です。続きは ${escapeHtml(diffJsonUrl)} をご覧ください。<br />` : "";
+    const notice = entries.length > 10 ? `差分件数が${entries.length}件です。続きは <a href="${escapeHtml(diffJsonUrl)}">${escapeHtml(diffJsonUrl)}</a> をご覧ください。<br />` : "";
 
     const body = displayEntries.map((entry) => diffEntryToHtml(entry)).join("<br /><br />");
 
