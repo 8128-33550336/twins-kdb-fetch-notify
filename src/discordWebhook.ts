@@ -84,10 +84,10 @@ export const diffToDiscordMessage = (diff: DiffJson): DiscordWebhookMessage => {
 
     const embeds = entries.map((entry) => diffEntryToEmbed(entry));
 
-    if (embeds.length > 10) {
+    if (embeds.length > 9) {
         return {
             content: `差分件数が${embeds.length}件です。続きは ${diffJsonUrl} をご覧ください。`,
-            embeds: embeds.slice(0, 10),
+            embeds: embeds.slice(0, 9),
         };
     }
 
